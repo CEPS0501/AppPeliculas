@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarPelicula">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Título -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Título">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Género -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Género">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Sinopsis -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfSinopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sinopsis">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="4"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Clasificación -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfClasificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Clasificación">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Duración -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfDuracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Duración (minutos)">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Director -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfDirector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Director">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Url de la imagen -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfURLimagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Url Imagen">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:id="@+id/btnSave"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

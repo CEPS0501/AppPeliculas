@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/menuPrincipal">
+    <fragment
+        android:id="@+id/menuPrincipal"
+        android:name="com.example.apppeliculas.MenuPrincipal"
+        android:label="fragment_menu_principal"
+        tools:layout="@layout/fragment_menu_principal" >
+        <action
+            android:id="@+id/go_to_agregarPelicula"
+            app:destination="@id/agregarPelicula" />
+        <action
+            android:id="@+id/go_to_CatalogoPeliculas"
+            app:destination="@id/catalogoPeliculas" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarPelicula"
+        android:name="com.example.apppeliculas.AgregarPelicula"
+        android:label="fragment_agregar_pelicula"
+        tools:layout="@layout/fragment_agregar_pelicula" />
+    <fragment
+        android:id="@+id/catalogoPeliculas"
+        android:name="com.example.apppeliculas.CatalogoPeliculas"
+        android:label="fragment_catalogo_peliculas"
+        tools:layout="@layout/fragment_catalogo_peliculas" >
+        <action
+            android:id="@+id/action_catalogoPeliculas_to_editar_pelicula2"
+            app:destination="@id/editar_pelicula" />
+        <action
+            android:id="@+id/action_catalogoPeliculas_to_agregarPelicula"
+            app:destination="@id/agregarPelicula" />
+    </fragment>
+    <fragment
+        android:id="@+id/editar_pelicula"
+        android:name="com.example.apppeliculas.editar_pelicula"
+        android:label="fragment_editar_pelicula"
+        tools:layout="@layout/fragment_editar_pelicula" />
+</navigation>
